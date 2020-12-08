@@ -1,0 +1,26 @@
+body {
+    height: 100%;
+    background: linear-gradient(#af68ea,#8665e8, #6462e7);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px 2px #efefef;
+    border-radius: 10px;
+}
+
+.card {
+    align-self: center;
+    display: flex;
+}
+
+.card-body {
+    display: hidden;
+}
