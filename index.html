@@ -19,68 +19,65 @@
     <div class="left">
       <img class="shadow-draw" src="./images/bg-pattern-desktop.svg">
       <img class="woman-draw" src="./images/illustration-woman-online-desktop.svg">
-      <img class="box-draw"src="./images/illustration-box-desktop.svg">
     </div>
     <div class="card-right">
       <h2>FAQ</h2>
       <div class="collapse">
-        <div class="card">
-          <div class="card-header">
-            How many team members can I invite?
-            <img class="icon" src="./images/icon-arrow-down.svg">
-          </div>
+          <button type="button" class="card-header">How many team members can I invite?</button>
           <div class="card-body">
             You can invite up to 2 additional users on the Free plan. There is no limit on
             team members for the Premium plan.
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            What is the maximum file upload size?
-            <img class="icon" src="./images/icon-arrow-down.svg">
-          </div>
+      </div>
+      <div class="collapse">
+          <button type="button" class="card-header">What is the maximum file upload size?</button>
           <div class="card-body">
             No more than 2GB. All files in your account must fit your allotted storage space.
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            How do I reset my password?
-            <img class="icon" src="./images/icon-arrow-down.svg">
-          </div>
+      </div>
+      <div class="collapse">
+          <button type="button" class="card-header">How do I reset my password?</button>
           <div class="card-body">
             Click “Forgot password” from the login page or “Change password” from your profile page.
             A reset link will be emailed to you.
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            Can I cancel my subscription?
-            <img class="icon" src="./images/icon-arrow-down.svg">
-          </div>
+      </div>
+      <div class="collapse">
+        <button type="button" class="card-header">Can I cancel my subscription?</button>
           <div class="card-body">
             Yes! Send us a message and we’ll process your request no questions asked.
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            Do you provide additional support?
-            <img class="icon" src="./images/icon-arrow-down.svg">
-          </div>
+      </div>
+      <div class="collapse">
+      <button type="button" class="card-header">Do you provide additional support?</button>
           <div class="card-body">
             Chat and email support is available 24/7. Phone lines are open during normal business hours.
           </div>
-
-        </div>
       </div>
     </div>
-
-
   </div>
+  <img class="box-draw"src="./images/illustration-box-desktop.svg">
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Jhonatan Konopp</a>.
   </div>
+
+  <script>
+    var coll = document.getElementsByClassName("card-header");
+    var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    </script>
 </body>
 
 </html>
