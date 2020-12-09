@@ -7,6 +7,8 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./scripts/css/css.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,9 +17,9 @@
 <body>
   <div class="wrapper">
     <div class="left">
-      <img src="./images/bg-pattern-desktop.svg">
-      <img src="./images/illustration-woman-online-desktop.svg">
-      <img src="./images/illustration-box-desktop.svg">
+      <img class="shadow-draw" src="./images/bg-pattern-desktop.svg">
+      <img class="woman-draw" src="./images/illustration-woman-online-desktop.svg">
+      <img class="box-draw"src="./images/illustration-box-desktop.svg">
     </div>
     <div class="card-right">
       <h2>FAQ</h2>
@@ -25,6 +27,7 @@
         <div class="card">
           <div class="card-header">
             How many team members can I invite?
+            <img class="icon" src="./images/icon-arrow-down.svg">
           </div>
           <div class="card-body">
             You can invite up to 2 additional users on the Free plan. There is no limit on
@@ -34,6 +37,7 @@
         <div class="card">
           <div class="card-header">
             What is the maximum file upload size?
+            <img class="icon" src="./images/icon-arrow-down.svg">
           </div>
           <div class="card-body">
             No more than 2GB. All files in your account must fit your allotted storage space.
@@ -42,6 +46,7 @@
         <div class="card">
           <div class="card-header">
             How do I reset my password?
+            <img class="icon" src="./images/icon-arrow-down.svg">
           </div>
           <div class="card-body">
             Click “Forgot password” from the login page or “Change password” from your profile page.
@@ -51,6 +56,7 @@
         <div class="card">
           <div class="card-header">
             Can I cancel my subscription?
+            <img class="icon" src="./images/icon-arrow-down.svg">
           </div>
           <div class="card-body">
             Yes! Send us a message and we’ll process your request no questions asked.
@@ -59,6 +65,7 @@
         <div class="card">
           <div class="card-header">
             Do you provide additional support?
+            <img class="icon" src="./images/icon-arrow-down.svg">
           </div>
           <div class="card-body">
             Chat and email support is available 24/7. Phone lines are open during normal business hours.
@@ -72,7 +79,7 @@
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Jhonatan Konopp</a>.
   </div>
 </body>
 
