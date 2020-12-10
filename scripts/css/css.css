@@ -16,16 +16,23 @@ h2 {
     font-weight: 800;
 }
 
-.woman-draw, .shadow-draw {
+.woman-draw {
     position: absolute;
     right: 60%;
     width: 400px;
     z-index: -1;
 }
 
+.shadow-draw {
+    position: absolute;
+    right: 60%;
+    z-index: -1;
+    margin-bottom: 20%;
+}
+
 .box-draw {
     position: absolute;
-    bottom: 50%;
+    bottom: 30%;
     left: 10%;
     z-index: 1;
 }
@@ -54,16 +61,20 @@ h2 {
 }
 
 .card-right {
-    align-items: flex-end;
+    align-items: end;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     display: flex;
-    flex-grow: 1;
+    width: 50%;
+    margin-left: 50%;
 }
 
 .collapse {
     flex-direction: column;
+    border-bottom: 1px solid #efefef;
+    width: 80%;
+    padding: 5px;
 }
 
 .card {
@@ -78,15 +89,27 @@ h2 {
     background-color: transparent;
     padding: 10px;
     width: 100%;
-    text-align: left;
     outline: none;
     color: black;
+    text-align: left;
+}
+
+.card-header::after {
+    content: url("../../images/icon-arrow-down.svg");
+    float: right;
+    margin-left: 10px;
+}
+
+.active::after {
+    content: url("../../images/icon-arrow-down.svg");
+    transform: rotate(180deg);
 }
 
 .card-body {
     display: none;
+    padding: 10px;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+    font-size: small;
 }
 
 .icon {
