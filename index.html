@@ -18,9 +18,9 @@
   <div class="wrapper">
     <div class="left">
       <picture class="woman-draw">
-        <source srcset="./images/illustration-woman-online-desktop.svg"  media="(min-width: 1310px)">
-        <source srcset="./images/illustration-woman-online-mobile.svg"  media="(max-width: 1309px)">
-        <img src="./images/illustration-woman-online-desktop.svg" alt="" >
+        <source srcset="./images/illustration-woman-online-desktop.svg" media="(min-width: 1310px)">
+        <source srcset="./images/illustration-woman-online-mobile.svg" media="(max-width: 1309px)">
+        <img src="./images/illustration-woman-online-desktop.svg" alt="">
       </picture>
 
       <img class="shadow-draw" src="./images/bg-pattern-desktop.svg">
@@ -29,40 +29,40 @@
     <div class="card-right">
       <h2>FAQ</h2>
       <div class="collapse">
-          <button type="button" class="card-header">How many team members can I invite?</button>
-          <div class="card-body">
-            You can invite up to 2 additional users on the Free plan. There is no limit on
-            team members for the Premium plan.
-          </div>
+        <button type="button" class="card-header">How many team members can I invite?</button>
+        <div class="card-body">
+          You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.
+        </div>
       </div>
       <div class="collapse">
-          <button type="button" class="card-header">What is the maximum file upload size?</button>
-          <div class="card-body">
-            No more than 2GB. All files in your account must fit your allotted storage space.
-          </div>
+        <button type="button" class="card-header">What is the maximum file upload size?</button>
+        <div class="card-body">
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </div>
       </div>
       <div class="collapse">
-          <button type="button" class="card-header">How do I reset my password?</button>
-          <div class="card-body">
-            Click “Forgot password” from the login page or “Change password” from your profile page.
-            A reset link will be emailed to you.
-          </div>
+        <button type="button" class="card-header">How do I reset my password?</button>
+        <div class="card-body">
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+        </div>
       </div>
       <div class="collapse">
         <button type="button" class="card-header">Can I cancel my subscription?</button>
-          <div class="card-body">
-            Yes! Send us a message and we’ll process your request no questions asked.
-          </div>
+        <div class="card-body">
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </div>
       </div>
       <div class="collapse">
-      <button type="button" class="card-header">Do you provide additional support?</button>
-          <div class="card-body">
-            Chat and email support is available 24/7. Phone lines are open during normal business hours.
-          </div>
+        <button type="button" class="card-header">Do you provide additional support?</button>
+        <div class="card-body">
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </div>
       </div>
     </div>
   </div>
-  <img class="box-draw"src="./images/illustration-box-desktop.svg">
+  <img class="box-draw" src="./images/illustration-box-desktop.svg">
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Jhonatan Konopp</a>.
@@ -72,20 +72,20 @@
     var coll = document.getElementsByClassName("card-header");
     var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-      this.style.fontWeight = "lighter";
-    } else {
-      content.style.display = "block";
-      this.style.fontWeight = "bold";
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          this.style.fontWeight = "lighter";
+        } else {
+          content.style.display = "block";
+          this.style.fontWeight = "bold";
+        }
+      });
     }
-  });
-}
-    </script>
+  </script>
 </body>
 
 </html>
