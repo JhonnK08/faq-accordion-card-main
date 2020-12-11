@@ -1,22 +1,27 @@
 @media (max-width: 840px) {
     .wrapper {
         overflow: unset !important;
+        height: 500px !important;
+        margin-top: 10%;
     }
     .left {
         position: absolute ;
         margin-right: auto;
-        justify-content: center !important;
+        justify-content: center !important; 
+        margin-left: 45% !important;
+        margin-top: 10% !important;
     }
     .card-right {
         width: 80% !important;
-        margin-top: 10%;
+        margin-top: 30%;
         align-items: center !important;
+
     }
     .woman-draw {
-        max-width: 100%;
         width: auto !important;
         height: auto !important;
         right: auto !important;
+        align-content: center;
     }
     .box-draw {
         display: none !important;
@@ -84,7 +89,7 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    position: relative;
+    position: absolute;
     z-index: 1;
     overflow: hidden;
     max-width: 80%;
