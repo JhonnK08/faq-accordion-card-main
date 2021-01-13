@@ -9,12 +9,12 @@
         margin-right: auto;
         justify-content: center !important; 
         margin-left: 45% !important;
-        margin-top: 10% !important;
+        margin-top: 40px !important;
     }
     .card-right {
         width: 80% !important;
         margin-left: auto !important;
-        margin-top: 40% !important;
+        margin-top: 150px !important;
         align-items: center !important;
 
     }
@@ -34,6 +34,7 @@
         position: absolute !important;
         margin-right: auto !important;
         margin-left: 20px !important;
+        margin-bottom: 50px !important;
     }
     .collapse {
         width: 100% !important;
